@@ -16,33 +16,32 @@ header-includes:
    \setlength\headheight{28pt}
    \fancyhead[R]{\includegraphics[width=3cm]{logo_espol.jpg}}
 ---
+
 \pagebreak
+
 # Resumen
 
-<br>
+<pre></pre>
 <font size="3">
 <p style="text-align: justify;">
 Este repositorio contiene un set de datos obtenido de la plataforma Kaggle. La tarea consiste en utilizar la herramienta R Studio para presentar un análisis de los datos. El archivo con los datos es: 
-<br>
+<pre></pre>
 *  StudentsPerformance.csv
 Las variables de interés en este dataset son las que miden el rendimiento académico del estudiante:
-<br>
-* math score
-* reading score
-* writing score
-<br>
-El trabajo consiste en usar la estadística descriptiva para presentar un resumen gráfico de los datos y la inferencial para responder a las siguientes preguntas:
-<br>
-* ¿Qué factores afectan más el rendimiento del estudiante? ¿Cómo? </li>
-<br>
+<pre></pre>
+- math score
+- reading score
+- writing score
+* El trabajo consiste en usar la estadística descriptiva para presentar un resumen gráfico de los datos y la inferencial para responder a las siguientes preguntas:
+&nbsp;
+* ¿Qué factores afectan más el rendimiento del estudiante? ¿Cómo? 
+&nbsp;
 El análisis debe ser hecho usando R Studio y R Markdown (o un Notebook de R), es decir en este repositorio deben incluirse archivos tipo Rmd que al compilarse generen el reporte.
-<br>
+<pre></pre>
 * Estadística descriptiva: El reporte debe hacer un resumen de los datos usando gráficos relevantes (diagramas de caja, dispersión, densidad, etc.) y estadísticas de dispersión y tendencia central.
 *  Estadística inferencial: El reporte debe hacer pruebas de hipótesis y/o regresión lineal múltiple para justificar sus conclusiones. Las pruebas de hipótesis deben demostrar lo que asumen (por ejemplo normalidad en los datos) y presentar claramente las hipótesis nulas y alternativas con el respectivo p-value y alpha.
 </p>
 </font>
-\pagebreak
-
 
 \pagebreak
 # Estadística Descriptiva

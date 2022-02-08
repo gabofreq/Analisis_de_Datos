@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.8)  8 FEB 2022 01:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.8)  8 FEB 2022 01:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -450,7 +450,7 @@ LaTeX Info: Redefining \% on input line 1.
 <logo_espol.jpg, id=30, 752.0597pt x 306.39468pt>
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 124.
+Package pdftex.def Info: logo_espol.jpg  used on input line 139.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -460,13 +460,13 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
 [2 <./logo_espol.jpg>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 135.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 148.
 (c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 165.
+Package pdftex.def Info: logo_espol.jpg  used on input line 178.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -477,14 +477,14 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 
 [3]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 185.
+(Font)              <10> on input line 198.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 185.
+(Font)              <7> on input line 198.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 185.
+(Font)              <5> on input line 198.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 195.
+Package pdftex.def Info: logo_espol.jpg  used on input line 208.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -496,7 +496,7 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 [4]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 229.
+Package pdftex.def Info: logo_espol.jpg  used on input line 242.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -508,7 +508,7 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 [5]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 258.
+Package pdftex.def Info: logo_espol.jpg  used on input line 271.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -520,7 +520,7 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 [6]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 292.
+Package pdftex.def Info: logo_espol.jpg  used on input line 305.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -532,7 +532,7 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 [7]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 321.
+Package pdftex.def Info: logo_espol.jpg  used on input line 334.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -545,34 +545,12 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 <Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf, id=63, 578.16pt x 201.75375pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf  used on input line 329.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf  used on input line 342.
 (pdftex.def)             Requested size: 469.75385pt x 163.92451pt.
 <Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-2.pdf, id=64, 578.16pt x 201.75375pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-2.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-2.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-2.pdf  used on input line 331.
-(pdftex.def)             Requested size: 469.75385pt x 163.92451pt.
-File: logo_espol.jpg Graphic file (type jpg)
-<use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 333.
-(pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.37418pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.37418pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
-
-[9 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf> <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-2.pdf>]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf, id=79, 578.16pt x 201.75375pt>
-File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file (type pdf)
-<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf  used on input line 342.
-(pdftex.def)             Requested size: 469.75385pt x 163.92451pt.
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf, id=80, 578.16pt x 201.75375pt>
-File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf Graphic file (type pdf)
-<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf  used on input line 344.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-2.pdf  used on input line 344.
 (pdftex.def)             Requested size: 469.75385pt x 163.92451pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
@@ -585,15 +563,37 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
+[9 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf> <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-2.pdf>]
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf, id=79, 578.16pt x 201.75375pt>
+File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file (type pdf)
+<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf>
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf  used on input line 355.
+(pdftex.def)             Requested size: 469.75385pt x 163.92451pt.
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf, id=80, 578.16pt x 201.75375pt>
+File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf Graphic file (type pdf)
+<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf>
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf  used on input line 357.
+(pdftex.def)             Requested size: 469.75385pt x 163.92451pt.
+File: logo_espol.jpg Graphic file (type jpg)
+<use logo_espol.jpg>
+Package pdftex.def Info: logo_espol.jpg  used on input line 359.
+(pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
+
+Package fancyhdr Warning: \headheight is too small (28.0pt): 
+(fancyhdr)                Make it at least 38.37418pt, for example:
+(fancyhdr)                \setlength{\headheight}{38.37418pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
+
 [10 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf> <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf>]
 <Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf, id=95, 433.62pt x 433.62pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf  used on input line 353.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf  used on input line 366.
 (pdftex.def)             Requested size: 433.63878pt x 433.63878pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 355.
+Package pdftex.def Info: logo_espol.jpg  used on input line 368.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -606,11 +606,11 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 <Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf, id=106, 505.89pt x 433.62pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf  used on input line 362.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf  used on input line 375.
 (pdftex.def)             Requested size: 469.76265pt x 402.65372pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 364.
+Package pdftex.def Info: logo_espol.jpg  used on input line 377.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -623,11 +623,11 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 <Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf, id=119, 505.89pt x 433.62pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf  used on input line 370.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf  used on input line 383.
 (pdftex.def)             Requested size: 469.76265pt x 402.65372pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 372.
+Package pdftex.def Info: logo_espol.jpg  used on input line 385.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -640,11 +640,11 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 <Analisis-de-Datos_files/figure-latex/unnamed-chunk-22-1.pdf, id=133, 505.89pt x 433.62pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-22-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-22-1.pdf  used on input line 380.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-22-1.pdf  used on input line 393.
 (pdftex.def)             Requested size: 469.76265pt x 402.65372pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 382.
+Package pdftex.def Info: logo_espol.jpg  used on input line 395.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -657,11 +657,11 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 <Analisis-de-Datos_files/figure-latex/unnamed-chunk-23-1.pdf, id=148, 505.89pt x 361.35pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-23-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-23-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-23-1.pdf  used on input line 390.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-23-1.pdf  used on input line 403.
 (pdftex.def)             Requested size: 469.76265pt x 335.54477pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 392.
+Package pdftex.def Info: logo_espol.jpg  used on input line 405.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -674,11 +674,11 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 <Analisis-de-Datos_files/figure-latex/unnamed-chunk-24-1.pdf, id=162, 505.89pt x 361.35pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-24-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-24-1.pdf  used on input line 401.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-24-1.pdf  used on input line 414.
 (pdftex.def)             Requested size: 469.76265pt x 335.54477pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 403.
+Package pdftex.def Info: logo_espol.jpg  used on input line 416.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -690,7 +690,7 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 [16 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-24-1.pdf>]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 429.
+Package pdftex.def Info: logo_espol.jpg  used on input line 442.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -702,7 +702,7 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 [17]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 447.
+Package pdftex.def Info: logo_espol.jpg  used on input line 460.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -714,7 +714,7 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 [18]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 485.
+Package pdftex.def Info: logo_espol.jpg  used on input line 498.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -726,7 +726,7 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 [19]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 517.
+Package pdftex.def Info: logo_espol.jpg  used on input line 530.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -738,7 +738,7 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 [20]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 546.
+Package pdftex.def Info: logo_espol.jpg  used on input line 559.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -755,15 +755,15 @@ Package rerunfilecheck Info: File `Analisis-de-Datos.out' has not changed.
 (rerunfilecheck)             Checksum: B27D8BA6BADF525934C1D3BF1FC9AF08;409.
  ) 
 Here is how much of TeX's memory you used:
- 12425 strings out of 480220
- 198592 string characters out of 5893337
+ 12426 strings out of 480220
+ 198597 string characters out of 5893337
  499599 words of memory out of 5000000
- 30149 multiletter control sequences out of 15000+600000
+ 30150 multiletter control sequences out of 15000+600000
  514890 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,15n,63p,274b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Analisis-de-Datos.pdf (21 pages, 740849 bytes).
+Output written on Analisis-de-Datos.pdf (21 pages, 740614 bytes).
 PDF statistics:
  234 PDF objects out of 1000 (max. 8388607)
  176 compressed objects within 2 object streams
