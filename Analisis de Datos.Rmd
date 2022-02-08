@@ -1,0 +1,511 @@
+---
+title: "Estadística Descriptiva e Inferencial"
+subtitle: "Maestría en Ciencias Computacionales"
+author: "Gabriel Mantilla Saltos"
+institute: "Espol"
+date: "`r Sys.Date()`"
+output: 
+  pdf_document:
+    toc: TRUE
+lang: Es-es    
+always_allow_html: yes
+header-includes: 
+   \usepackage{graphicx}
+   \usepackage{fancyhdr}
+   \pagestyle{fancy}
+   \setlength\headheight{28pt}
+   \fancyhead[R]{\includegraphics[width=3cm]{logo_espol.jpg}}
+---
+\pagebreak
+# Resumen
+
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Este repositorio contiene un set de datos obtenido de la plataforma Kaggle. La tarea consiste en utilizar la herramienta R Studio para presentar un análisis de los datos. El archivo con los datos es: 
+<br>
+*  StudentsPerformance.csv
+Las variables de interés en este dataset son las que miden el rendimiento académico del estudiante:
+<br>
+* math score
+* reading score
+* writing score
+<br>
+El trabajo consiste en usar la estadística descriptiva para presentar un resumen gráfico de los datos y la inferencial para responder a las siguientes preguntas:
+<br>
+* ¿Qué factores afectan más el rendimiento del estudiante? ¿Cómo? </li>
+<br>
+El análisis debe ser hecho usando R Studio y R Markdown (o un Notebook de R), es decir en este repositorio deben incluirse archivos tipo Rmd que al compilarse generen el reporte.
+<br>
+* Estadística descriptiva: El reporte debe hacer un resumen de los datos usando gráficos relevantes (diagramas de caja, dispersión, densidad, etc.) y estadísticas de dispersión y tendencia central.
+*  Estadística inferencial: El reporte debe hacer pruebas de hipótesis y/o regresión lineal múltiple para justificar sus conclusiones. Las pruebas de hipótesis deben demostrar lo que asumen (por ejemplo normalidad en los datos) y presentar claramente las hipótesis nulas y alternativas con el respectivo p-value y alpha.
+</p>
+</font>
+\pagebreak
+
+
+\pagebreak
+# Estadística Descriptiva
+
+```{r include=F, results=F, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+library(magrittr)
+library(dplyr)
+library(lubridate)
+library(FSA)
+library(DescTools)
+DATA <- read.csv("~/GitHub/analisis-de-datos-con-r-studio-gabofreq/StudentsPerformance.csv")
+DATA <- DATA %>% rename(race = race.ethnicity, education = parental.level.of.education, test = test.preparation.course, math = math.score, reading = reading.score, writing = writing.score)
+# genero para math
+A = DATA %$% Summarize(math~gender, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(math,gender,FUN = function(x) round(mean(Mode(x)),0)) %>% cbind(.) 
+genre_math = A %>% left_join(data.frame(gender = row.names(B), mode = as.numeric(B)),  by = "gender")
+# race para math
+A = DATA %$% Summarize(math~race, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(math,race,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+race_math = A %>% left_join(data.frame(race = row.names(B), mode = as.numeric(B)),  by = "race")
+# education para math
+A = DATA %$% Summarize(math~education, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(math,education,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+education_math = A %>% left_join(data.frame(education = row.names(B), mode = as.numeric(B)),  by = "education")
+# lunch para math
+A = DATA %$% Summarize(math~lunch, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(math,lunch,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+lunch_math = A %>% left_join(data.frame(lunch = row.names(B), mode = as.numeric(B)),  by = "lunch")
+# test para math
+A = DATA %$% Summarize(math~test, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(math,test,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+test_math = A %>% left_join(data.frame(test = row.names(B), mode = as.numeric(B)),  by = "test")
+
+# genero para reading
+A = DATA %$% Summarize(reading~gender, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(reading,gender,FUN = function(x) round(mean(Mode(x)),0)) %>% cbind(.) 
+genre_reading = A %>% left_join(data.frame(gender = row.names(B), mode = as.numeric(B)),  by = "gender")
+# race para reading
+A = DATA %$% Summarize(reading~race, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(reading,race,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+race_reading = A %>% left_join(data.frame(race = row.names(B), mode = as.numeric(B)),  by = "race")
+# education para reading
+A = DATA %$% Summarize(reading~education, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(reading,education,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+education_reading = A %>% left_join(data.frame(education = row.names(B), mode = as.numeric(B)),  by = "education")
+# lunch para reading
+A = DATA %$% Summarize(reading~lunch, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(reading,lunch,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+lunch_reading = A %>% left_join(data.frame(lunch = row.names(B), mode = as.numeric(B)),  by = "lunch")
+# test para reading
+A = DATA %$% Summarize(reading~test, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(reading,test,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+test_reading = A %>% left_join(data.frame(test = row.names(B), mode = as.numeric(B)),  by = "test")
+
+# genero para writing
+A = DATA %$% Summarize(writing~gender, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(writing,gender,FUN = function(x) round(mean(Mode(x)),0)) %>% cbind(.) 
+genre_writing = A %>% left_join(data.frame(gender = row.names(B), mode = as.numeric(B)),  by = "gender")
+# race para writing
+A = DATA %$% Summarize(writing~race, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(writing,race,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+race_writing = A %>% left_join(data.frame(race = row.names(B), mode = as.numeric(B)),  by = "race")
+# education para writing
+A = DATA %$% Summarize(writing~education, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(writing,education,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+education_writing = A %>% left_join(data.frame(education = row.names(B), mode = as.numeric(B)),  by = "education")
+# lunch para writing
+A = DATA %$% Summarize(writing~lunch, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(writing,lunch,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+lunch_writing = A %>% left_join(data.frame(lunch = row.names(B), mode = as.numeric(B)),  by = "lunch")
+# test para writing
+A = DATA %$% Summarize(writing~test, digits = 2, na.rm = T,percZero="always")
+B = DATA %$% tapply(writing,test,FUN = function(x) round(mean(Mode(x,na.rm = T)),0)) %>% cbind(.) 
+test_writing = A %>% left_join(data.frame(test = row.names(B), mode = as.numeric(B)),  by = "test")
+```
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Analizamos estadísticas descriptivas de las notas de matemáticas por las variables categóricas, tenemos el género, la raza étnica, el nivel de educación, el tipo de lunch que tienen, y la verificación de completado del test:
+<br>
+Género.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+genre_math
+```
+<font size="3">
+<p style="text-align: justify;">
+Raza Étnica.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+race_math
+```
+<font size="3">
+<p style="text-align: justify;">
+Nivel de educación
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+education_math
+```
+\pagebreak
+<font size="3">
+<p style="text-align: justify;">
+Lunch
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+lunch_math
+```
+<font size="3">
+<p style="text-align: justify;">
+Test
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+test_math
+```
+<font size="3">
+<p style="text-align: justify;">
+<b>En conclusión</b>, para el Género la nota promedio más alta (<b>68</b>) es para los hombres, aunque su moda sea de <b>62</b>, Mientras que, si analizamos por raza, el promedio más alto es de <b>73.8</b> para el grupo E, con una moda de <b>79</b>, incluso los datos ordenados hasta el 75 % para el mismo grupo se mantiene más alto (<b>85</b>) que los demás. El nivel de educación con la nota más alta es para los universitarios con pregrado, con <b>69.7</b> siendo su moda de <b>80</b>. Algo interesante es que la nota promedio para los que tienen el lunch estándar es de <b>70</b> con respecto a los free/reduce de <b>58</b>, el tipo de lunch es significativo en la nota. y por último la cantidad de alumnos que completaron el examen fue de <b>358</b> con respecto a los <b>1000</b> que lo dieron.
+</p>
+</font>
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Analicemos las estadísticas descriptivas de las notas de lectura por las variables categóricas: 
+<br>
+<br>
+Género.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+genre_reading
+```
+<font size="3">
+<p style="text-align: justify;">
+Raza Étnica.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+race_reading
+```
+<font size="3">
+<p style="text-align: justify;">
+Nivel de educación
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+education_reading
+```
+\pagebreak
+<font size="3">
+<p style="text-align: justify;">
+Lunch
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+lunch_reading
+```
+<font size="3">
+<p style="text-align: justify;">
+Test
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+test_reading
+```
+<font size="3">
+<p style="text-align: justify;">
+<b>En conclusión</b>, para el Género, las mujeres obtuvieron en promedio una mayor nota (<b>72</b>) con respecto a los hombres, aunque su moda es similar (<b>72</b> mujeres ~ <b>70</b> hombres). Por otro lado, la raza étnica del grupo E obtuvo la mayor nota con <b>73</b> puntos en promedio un tercer cuartil de <b>84</b>.  El nivel de educación en cambio indica que los que tienen maestría obtuvieron una mayor nota (<b>75</b>) con respecto a los demás, aunque la moda de los estudiantes de pregrado obtuvo <b>100</b>. Del mismo modo los estudiantes que tienen un lunch estándar obtuvieron una nota más alta (<b>71</b>). Y por último los que completaron el examen obtuvieron una nota más alta de <b>73.8</b> con respecto a los que no en su totalidad <b>66</b>.
+</p>
+</font>
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Analicemos por ultimo ahora las estadísticas descriptivas de las notas de escritura por las variables categóricas: 
+<br>
+<br>
+Género.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+genre_writing
+```
+<font size="3">
+<p style="text-align: justify;">
+Raza Étnica.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+race_writing
+```
+<font size="3">
+<p style="text-align: justify;">
+Nivel de educación
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+education_writing
+```
+\pagebreak
+<font size="3">
+<p style="text-align: justify;">
+Lunch
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+lunch_writing
+```
+<font size="3">
+<p style="text-align: justify;">
+Test
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
+test_reading
+```
+<font size="3">
+<p style="text-align: justify;">
+<b>En conclusión</b>, tenemos que las mujeres obtuvieron una mayor nota promedio de <b>72</b> con respecto a las mujeres de <b>63</b>. La raza étnica del grupo E mantienen la punta con <b>71</b> puntos en promedio y un tercer cuartil de <b>80.2</b>. Por otro lado, el nivel de educación de los estudiantes que tienen una maestría, obtuvieron la mayor nota de <b>75.6</b> con una moda de <b>86</b>, mientras que el lunch mantiene la punta para los que toman un estándar, con un cuartil 1 (datos ordenandos hasta el 25 % de los datos) mayor de 62 con respecto a los <b>53</b> de los que toman un lunch free/reduced. Y por último los 358 estudiantes que completaron el examen obtuvieron una mayor nota de <b>73</b>, con respecto a los que no <b>66</b>.
+</p>
+</font>
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Analicemos la dispersión de las notas por Género y raza Étnica. Podemos afirmar que la mayor cantidad de datos para ambos géneros se concentra en un rango entre <b>50</b> y <b>80</b> puntos, la dispersión en ambos géneros es similar y la posición de las cajas bordean una mediana de <b>70</b> puntos. Mientras que para la raza étnica, tenemos que el Grupo E sus puntos tienen una mediana mas alta (<b>75</b>).
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=8, fig.height=2.8}
+library(ggplot2)
+library(ggthemes)
+library(corrplot)
+library(RColorBrewer)
+ggplot(DATA, aes(x = gender, y = math)) +
+  geom_boxplot(outlier.shape = NA, aes(fill=gender))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Género ~ Matemáticas", x = "",y = "Matemáticas") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+ggplot(DATA, aes(x = race, y = math)) +
+  geom_boxplot(outlier.shape = NA, aes(fill=race))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Raza Étnica ~ Matemáticas", x = "",y = "Matemáticas") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+```
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Analicemos la dispersión de las notas por Nivel de Educación y el Lunch . Podemos afirmar que la caja que más alta esta es la de los estudiantes de maestría con una mediana cercana a <b>75</b>, se observa un valor muy pequeño para some high school, probablemente alguien no dio el examen. Con respecto al lunch, se ve que la mayor cantidad de puntos del lunch estándar son más altos que free/reduced, explicando que los estudiantes que toman ese lunch mejoran sus notas de matemáticas.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=8, fig.height=2.8}
+ggplot(DATA, aes(x = education, y = math)) +
+  geom_boxplot(outlier.shape = NA, aes(fill=education))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Nivel Educación ~ Matemáticas", x = "",y = "Matemáticas") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+ggplot(DATA, aes(x = lunch, y = math)) +
+  geom_boxplot(outlier.shape = NA, aes(fill=lunch))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Matemáticas", x = "",y = "Matemáticas") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+```
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Analicemos la correlación que existe entre las variables numéricas, para conocer si las notas obtenidas son independientes entre sí. A continuación, mostramos una matriz de correlaciones, y podemos afirmar que las variables de interés están significativamente correlacionadas (<b>r > 0.8</b>).
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=6, fig.height=6}
+cor = DATA %>% select(math, reading, writing) %>% cor
+col <- colorRampPalette(c("#BB4444", "#EE9988", "#FFFFFF", "#77AADD", "#4477AA"))(10)
+corrplot(cor,diag = F,type = "upper", method="number", tl.srt=45, sig.level = 0.01, insig = "blank", col = col, cl.cex = 0.9, number.cex = 1.5,mar =c(0,0,0.5,0),cl.ratio = 0.5 )
+```
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Ahora veamos gráficamente las dependencias del género entre las notas de lectura ~ matemáticas. Del siguiente gráfico podemos observar que la relación es lineal positivo entre las dos variables, y que las mujeres tienen mejores notas de lectura y que los hombres mejores notas de matemáticas en todos los grupos étnicos.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+ggplot(DATA , aes(x= math, y= reading, colour = gender))+
+  geom_point() +
+  geom_smooth(method = "loess",formula = y ~ x, span = 0.8) + 
+  facet_wrap(~race) + 
+  theme_bw() + 
+  labs(title="Diagrama de dispersión", subtitle = "Lectura ~ Matemáticas para el Género y la raza Étnica") +
+  scale_colour_manual(values=brewer.pal(n = 2,name = "Set2"))
+```
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Si analizamos la relación entre las notas de escritura y lectura, para las variables categóricas nivel de educación y Lunch, podemos observar que la relación es positiva y en magnitud son muy similares dado que la nube de puntos del Lunch estándar y free/reduced son las mismas.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+ggplot(DATA , aes(x= writing, y= reading, colour = lunch))+ 
+  geom_point() +
+  geom_smooth(method = "loess",formula = y ~ x, span = 0.8) + 
+  facet_wrap(~education) + 
+  theme_bw() +
+  labs(title="Diagrama de dispersión", subtitle = "Reading ~ escritura para el Nivel de Educación y el Lunch") +
+  scale_colour_manual(values=brewer.pal(n = 2,name = "Set2"))
+```
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Si analizamos el diagrama de densidad de la variable matemáticas, en función del Género, podemos ver que la densidad de los datos es ligeramente mayor para las mujeres, y que el histograma de los hombres esta ligeramente más hacia la derecha, indicando notas más altas. También podemos observar que los datos tienden a una distribución normal para ambos géneros, esto lo podremos concluir más adelante.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+ggplot(DATA, aes(x=math, color=gender, fill=gender)) + 
+  geom_histogram(aes(y=..density..), alpha=0.5,binwidth = 5, position="identity")+
+  geom_density(alpha=.2) +  
+  theme_bw() +
+  labs(title="Diagrama de Densidad", subtitle = "Matemáticas ~ Género", y = "Densidad") + 
+  scale_fill_manual(values=brewer.pal(n = 2,name = "Set2"))
+```
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Analizando el diagrama de Densidad de las notas de Lectura en función al Género ,por la raza Étnica, podemos observar que las densidad son diferentes para los distintos grupos étnicos, teniendo una ligera mayor densidad el grupo E y más hacia la derecha, indicando que las notas son mayores para este grupo. Las curvas no tienen el comportamiento de una distribución normal, solo observando los gráficos.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=5}
+ggplot(DATA, aes(x=reading, color=gender, fill=gender)) + 
+  geom_histogram(aes(y=..density..), alpha=0.5,binwidth = 5, position="identity")+
+  geom_density(alpha=.2) + 
+  facet_wrap(~race) + 
+  theme_bw() +
+  labs(title="Diagrama de Densidad", subtitle = "Lectura ~ Género por Raza Étnica", y = "Densidad") + 
+  scale_fill_manual(values=brewer.pal(n = 3,name = "Set2"))
+```
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Analizando el diagrama de Densidad de las notas de Escritura en función al Género, por el Nivel de Educación, podemos observar que las densidades son ligeramente diferentes para los niveles de educación, los comportamientos más diferentes se observan en el grupo de High School para el género. El comportamiento de los histogramas para el grupo de estudiantes con maestrías, para el género masculino y femenino es significativamente variable según sus bandas.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=5}
+ggplot(DATA, aes(x=writing, color=gender, fill=gender)) + 
+  geom_histogram(aes(y=..density..), alpha=0.5,binwidth = 5, position="identity")+
+  geom_density(alpha=.2) +  
+  theme_bw() +
+  facet_wrap(~education) + 
+  labs(title="Diagrama de Densidad", subtitle = "Escritura ~ Género por Nivel de Educación", y = "Densidad") + 
+  scale_fill_manual(values=brewer.pal(n = 3,name = "Set2"))
+```
+\pagebreak
+# Estadística Inferencial
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Realizamos la prueba chi-cuadrado, que utiliza una aproximación a la distribución chi cuadrado de Pearson, para evaluar la discrepancia igual o mayor que la que exista entre los datos y las frecuencias esperadas. Para determinar si las variables son independientes con el nivel de significancia alpha, se rechaza la hipótesis nula, en base al valor p, si es menor o igual al nivel de significancia.
+<br>
+<br>
+H0: No hay diferencia en la proporción de estudiantes Hombres y Mujeres con respecto a su raza Étnica.
+<br>
+H1: Si hay diferencia
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+chisq.test(table(DATA$gender,DATA$race))
+```
+<font size="3">
+<p style="text-align: justify;">
+No Podemos concluir que las variables de Género y Raza Étnica son independientes, con un valor p mayor a 0.05, no tenemos suficinte evidencia estad+isticapara aceptar o rechazar la hipótesis nula. 
+</p>
+</font>
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Ahora estudiaremos la independencia entre el Género y el Nivel de Educación
+<br>
+H0: No hay diferencia en la proporción de estudiantes Hombres y Mujeres con respecto a su Nivel de Educación
+<br>
+H1: Si hay diferencia
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+chisq.test(table(DATA$gender,DATA$education))
+```
+<font size="3">
+<p style="text-align: justify;">
+Aceptamos la hipótesis Nula, de que no hay diferencias entre las proporciones de estudiantes hombres y mujeres con respecto a su nivel de educación.
+</p>
+</font>
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Estudiaremos una prueba para contrastar la normalidad en las variables de interés. La prueba de Hipótesis de Shapiro Wilk, plantea que si una muestra x1, ..., xn proviene de una población normalmente distribuida.
+<br>
+H0: La distribución es normal
+<br>
+H1: La distribución no es normal,
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+shapiro.test(DATA$math)
+shapiro.test(DATA$reading)
+shapiro.test(DATA$writing)
+```
+
+<font size="3">
+<p style="text-align: justify;">
+Podemos concluir que, para las 3 variables, el valor p es cercano a cero, es decir menor al nivel de significancia, por tanto, tenemos evidencia estadística para rechazar la idea de que las variables pertenecen a una población normalmente distribuida. De lo cual teniamos dudas de los histogramas en la sección anterior.
+</p>
+</font>
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+Dado que se no se asume normalidad en la variable Matemáticas, y que el tamaño de cada grupo de hombres y mujeres es mayor a 30, podriamos considerar usar la prueba t para comparacion de medias, siendo suficientemente robusto para obtener una conclusion mas acertada. Por otro lado por la proporcion de mujeres y hombres es necesario realizar una prueba de independencia para el Género, dado que la cantidad de estudiantes es similar (518 Mujeres, 482 Hombres).
+<br>
+Ho: La proporción de estudiantes hombres es la misma que de la de mujeres
+<br>
+Ha: la proporción de estudiantes es diferente
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+chisq.test(table(DATA$gender))
+```
+<font size="3">
+<p style="text-align: justify;">
+Podemos concluir que la proporción es la misma dado que el valor p es mayor que 0.05 y podemos aceptar la hipótesis nula. Ahora podemos obtener la diferencia entre las medias muestrales y suponer que la diferencia de medias es significativa (<b>5.09</b> puntos). Sin embargo, dado que el tamaño de cada grupo es mayor que 30 se puede considerar que el t-test que es suficientemente robusto para obtener una conclusión más clara.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+hombres <- DATA %>% filter(gender == "male") %>% pull(math)
+mujeres <- DATA %>% filter(gender == "female") %>% pull(math)
+mean(hombres) - mean(mujeres) # Diferencia de medias muestrales
+```
+\pagebreak
+<br>
+<font size="3">
+<p style="text-align: justify;">
+El valor t, muestra la prueba t asociada a la prueba de importancia del coeficiente estimado de las variables independientes, y se resumen como la probabilidad de observar cualquier valor igual o mayor a t. Un valor p pequeño indica que es probable que observemos una relación entre la variable dependiente y las independientes. El valor t del coeficiente es una medida de cuántas desviaciones estándar está lejos de 0 la estimación de nuestro coeficiente. 
+<br>
+H0: No existe relación entre la variable independiente y la dependiente
+<br>
+H1: Si existe relación
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+library(lmtest)
+model=lm(math ~ reading + writing, data = DATA)
+coeftest(model)
+```
+<font size="3">
+<p style="text-align: justify;">
+Podemos concluir que, por cada punto obtenido en lectura, obtendremos <b>0.6</b> puntos más en la nota de matemáticas y por cada punto obtenido en la nota de escritura, obtendremos <b>0.2</b> más en la nota de matemática. Los valores de p en ambas variables son cercanos a 0, es decir que las variables independientes son estadísticamente significativas para modelar el comportamiento de la nota de matemáticas.
+</p>
+</font>
