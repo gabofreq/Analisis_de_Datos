@@ -160,3 +160,29 @@ library(lmtest)
 model=lm(math ~ reading + writing, data = DATA)
 coeftest(model)
 
+
+hombres <- DATA %>% filter(gender == "male") %>% pull(math)
+mujeres <- DATA %>% filter(gender == "female") %>% pull(math)
+mean(hombres) - mean(mujeres) # Diferencia de medias muestrales
+res <- t.test(hombres, mujeres)
+res
+
+
+MUESTRA <- DATA %>% filter(test == 'completed', math <= 60, reading <= 60, writing <= 60)
+ggplot(MUESTRA, aes(x = lunch, y = math)) +
+  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Matemáticas", x = "",y = "Matemáticas") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+
+ggplot(MUESTRA, aes(x = lunch, y = math)) +
+  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Matemáticas", x = "",y = "Matemáticas") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+
+ggplot(MUESTRA, aes(x = lunch, y = writing)) +
+  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Escritura", x = "",y = "Escritura") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
