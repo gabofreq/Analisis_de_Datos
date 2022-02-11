@@ -762,7 +762,7 @@ Podemos concluir que, por cada punto obtenido en lectura, obtendremos **0.6** pu
 
 &nbsp;
 &nbsp;
-* Un análisis de independencia entre las variables de genero y raza en función a sus frecuencias, nos devuelve un valor p entre 0.05 y 0.1, sin tener evidencia estadística suficiente para aceptar la asociación entre ellas. El mismo análisis para el género y la educación, con un valor p mayor a 0.1, pudiendo así aceptar el supuesto de que son dependientes.
+* Un análisis de independencia entre las variables de genero y raza en función a sus frecuencias, nos devuelve un valor p entre 0.05 y 0.1, sin tener evidencia estadística suficiente para rechazar la independencia. El mismo análisis para el género y la educación, con un valor p mayor a 0.1, pudiendo así aceptar el supuesto de que son independientes.
 
 &nbsp;
 &nbsp;
