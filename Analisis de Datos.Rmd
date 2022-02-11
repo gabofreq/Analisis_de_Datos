@@ -386,6 +386,30 @@ ggplot(DATA, aes(x=writing, color=gender, fill=gender)) +
 \pagebreak
 # Estadística Inferencial
 
+<font size="3">
+<p style="text-align: justify;">
+Dado que se no se asume normalidad en la variable Matemáticas, y que el tamaño de cada grupo de hombres y mujeres es mayor a 30, podriamos considerar usar la prueba t para comparacion de medias, siendo suficientemente robusto para obtener una conclusion mas acertada. Por otro lado por la proporcion de mujeres y hombres es necesario realizar una prueba de independencia para el Género, dado que la cantidad de estudiantes es similar (518 Mujeres, 482 Hombres).
+
+&nbsp;
+&nbsp;
+* Ho: La proporción de estudiantes hombres es la misma que de la de mujeres.
+
+&nbsp;
+&nbsp;
+* Ha: la proporción de estudiantes es diferente.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+chisq.test(table(DATA$gender))
+```
+<font size="3">
+<p style="text-align: justify;">
+Podemos concluir que la proporción es la misma dado que el valor p es mayor que 0.05 y podemos aceptar la hipótesis nula. 
+</p>
+</font>
+
+\pagebreak
+
 &nbsp;
 &nbsp;
 <font size="3">
@@ -457,30 +481,6 @@ shapiro.test(DATA$writing)
 <font size="3">
 <p style="text-align: justify;">
 Podemos concluir que, para las 3 variables, el valor p es cercano a cero, es decir menor al nivel de significancia, por tanto, tenemos evidencia estadística para rechazar la idea de que las variables pertenecen a una población normalmente distribuida. De lo cual teniamos dudas de los histogramas en la sección anterior.
-</p>
-</font>
-\pagebreak
-
-
-<font size="3">
-<p style="text-align: justify;">
-Dado que se no se asume normalidad en la variable Matemáticas, y que el tamaño de cada grupo de hombres y mujeres es mayor a 30, podriamos considerar usar la prueba t para comparacion de medias, siendo suficientemente robusto para obtener una conclusion mas acertada. Por otro lado por la proporcion de mujeres y hombres es necesario realizar una prueba de independencia para el Género, dado que la cantidad de estudiantes es similar (518 Mujeres, 482 Hombres).
-
-&nbsp;
-&nbsp;
-* Ho: La proporción de estudiantes hombres es la misma que de la de mujeres.
-
-&nbsp;
-&nbsp;
-* Ha: la proporción de estudiantes es diferente.
-</p>
-</font>
-```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
-chisq.test(table(DATA$gender))
-```
-<font size="3">
-<p style="text-align: justify;">
-Podemos concluir que la proporción es la misma dado que el valor p es mayor que 0.05 y podemos aceptar la hipótesis nula. Ahora podemos obtener la diferencia entre las medias muestrales y suponer que la diferencia de medias es significativa (**5.09** puntos). Sin embargo, dado que el tamaño de cada grupo es mayor que 30 se puede considerar que el t-test que es suficientemente robusto para obtener una conclusión más clara.
 </p>
 </font>
 
