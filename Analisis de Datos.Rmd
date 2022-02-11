@@ -769,7 +769,7 @@ Podemos concluir que, por cada punto obtenido en lectura, obtendremos **0.6** pu
 
 &nbsp;
 &nbsp;
-* Un análisis de normalidad para las 3 variables de estudio, nos indican que ninguna de ellas pertenece a una distribución normal, obteniendo un valor menor que el nivel de significancia de 0.5. 
+* Un análisis de normalidad para las 3 variables de estudio, nos indican que ninguna de ellas pertenece a una distribución normal, obteniendo un valor menor que el nivel de significancia de 0.05. 
 
 &nbsp;
 &nbsp;
@@ -777,7 +777,7 @@ Podemos concluir que, por cada punto obtenido en lectura, obtendremos **0.6** pu
 
 &nbsp;
 &nbsp;
-* Por último, analizamos gráficos de dispersión entre la lectura y las matemáticas, agrupadas por Genero en función al Grupo Étnico. Luego las notas de lectura y escritura agrupadas por el nivel de educación en función al tipo de Lunch, obtenemos en ambos casos tendencias positivas y fuertes. La matriz de correlación entre las variables de interés nos da correlaciones mayores **0.8**. Si deseáramos modelar las matemáticas en función de las notas de escritura y lectura un test de coeficientes nos indica que ambas son significativas con un nivel de significancia de **0.99**.
+* Por último, analizamos gráficos de dispersión entre la lectura y las matemáticas, agrupadas por Genero en función al Grupo Étnico. Luego las notas de lectura y escritura agrupadas por el nivel de educación en función al tipo de Lunch, obtenemos en ambos casos tendencias positivas y fuertes. La matriz de correlación entre las variables de interés nos da correlaciones mayor igual que **0.8**. Si deseáramos modelar las matemáticas en función de las notas de escritura y lectura un test de coeficientes nos indica que ambas son significativas con un nivel de significancia de **0.99**.
 
 </p>
 </font>
@@ -786,16 +786,18 @@ Podemos concluir que, por cada punto obtenido en lectura, obtendremos **0.6** pu
 \pagebreak
 # Referencias
 
-[1] t-test. https://rpubs.com/sujith/IS.
+[1] **t-test**. [https://rpubs.com/sujith/IS](https://rpubs.com/sujith/IS).
 
-[2] Estadística inferencial. https://www.datavedas.com/inferential-statistics-in-r/.
+[2] **Estadística inferencial**. [https://www.datavedas.com/inferential-statistics-in-r/](https://www.datavedas.com/inferential-statistics-in-r/).
 
-[3] Ggplot2. https://r4stats.com/examples/graphics-ggplot2/.
+[3] **Ggplot2**. [https://r4stats.com/examples/graphics-ggplot2/](https://r4stats.com/examples/graphics-ggplot2/).
 
-[4] Corplot. http://www.sthda.com/english/wiki/visualize-correlation-matrix-using-correlogram.
+[4] **Corplot**. [http://www.sthda.com/english/wiki/visualize-correlation-matrix-using-correlogram](http://www.sthda.com/english/wiki/visualize-correlation-matrix-using-correlogram).
 
-[5] Pdf con Rmarkdown. https://www.youtube.com/watch?v=vyqCebNkreI.
+[5] **Pdf con Rmarkdown**. [https://www.youtube.com/watch?v=vyqCebNkreI](https://www.youtube.com/watch?v=vyqCebNkreI).
 
-[6] Rmarkdown. http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/.
+[6] **Rmarkdown**. [http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/](http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/).
 
-[7] Rmarkdown. https://r4ds.had.co.nz/r-markdown.html
+[7] **Rmarkdown**. [https://r4ds.had.co.nz/r-markdown.html](https://r4ds.had.co.nz/r-markdown.html).
+
+[8] **¿Chi cuadrado o Ji cuadrado?, 2017**. [http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S1029-30432017000400001](http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S1029-30432017000400001).
