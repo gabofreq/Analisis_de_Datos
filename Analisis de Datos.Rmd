@@ -69,7 +69,7 @@ library(dplyr)
 library(lubridate)
 library(FSA)
 library(DescTools)
-DATA <- read.csv("~/GitHub/analisis-de-datos-con-r-studio-gabofreq/StudentsPerformance.csv")
+DATA <- read.csv("StudentsPerformance.csv")
 DATA <- DATA %>% rename(race = race.ethnicity, education = parental.level.of.education, test = test.preparation.course, math = math.score, reading = reading.score, writing = writing.score)
 # genero para math
 A = DATA %$% Summarize(math~gender, digits = 2, na.rm = T,percZero="always")
@@ -340,12 +340,11 @@ Si analizamos el diagrama de densidad de la variable matemáticas, en función d
 </p>
 </font>
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
-ggplot(DATA, aes(x=math, color=gender, fill=gender)) + 
-  geom_histogram(aes(y=..density..), alpha=0.5,binwidth = 5, position="identity")+
-  geom_density(alpha=.2) +  
+ggplot(DATA, aes(x = math, fill = gender)) +
+  geom_density(alpha = 0.7) + 
   theme_bw() +
   labs(title="Diagrama de Densidad", subtitle = "Matemáticas ~ Género", y = "Densidad") + 
-  scale_fill_manual(values=brewer.pal(n = 2,name = "Set2"))
+  scale_fill_manual(values = brewer.pal(n = 2,name = "Set2"))
 ```
 \pagebreak
 
@@ -357,13 +356,12 @@ Analizando el diagrama de Densidad de las notas de Lectura en función al Géner
 </p>
 </font>
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=5}
-ggplot(DATA, aes(x=reading, color=gender, fill=gender)) + 
-  geom_histogram(aes(y=..density..), alpha=0.5,binwidth = 5, position="identity")+
-  geom_density(alpha=.2) + 
-  facet_wrap(~race) + 
+ggplot(DATA, aes(x = reading, fill = gender)) +
+  geom_density(alpha = 0.7) + 
+    facet_wrap(~race) + 
   theme_bw() +
-  labs(title="Diagrama de Densidad", subtitle = "Lectura ~ Género por Raza Étnica", y = "Densidad") + 
-  scale_fill_manual(values=brewer.pal(n = 3,name = "Set2"))
+  labs(title="Diagrama de Densidad", subtitle = "Lectura ~ Género por Raza Étnica", y = "Densidad") +
+  scale_fill_manual(values = brewer.pal(n = 2,name = "Set2"))
 ```
 \pagebreak
 
@@ -375,13 +373,12 @@ Analizando el diagrama de Densidad de las notas de Escritura en función al Gén
 </p>
 </font>
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=5}
-ggplot(DATA, aes(x=writing, color=gender, fill=gender)) + 
-  geom_histogram(aes(y=..density..), alpha=0.5,binwidth = 5, position="identity")+
-  geom_density(alpha=.2) +  
-  theme_bw() +
+ggplot(DATA, aes(x = writing, fill = gender)) +
+  geom_density(alpha = 0.7) + 
   facet_wrap(~education) + 
+  theme_bw() +
   labs(title="Diagrama de Densidad", subtitle = "Escritura ~ Género por Nivel de Educación", y = "Densidad") + 
-  scale_fill_manual(values=brewer.pal(n = 3,name = "Set2"))
+  scale_fill_manual(values = brewer.pal(n = 2,name = "Set2"))
 ```
 \pagebreak
 # Estadística Inferencial
@@ -418,11 +415,11 @@ Para determinar la asociación o independencia de dos variables cualitativas con
 
 &nbsp;
 &nbsp;
-* H0: No hay diferencia en la proporción de estudiantes Hombres y Mujeres con respecto a su raza Étnica (asociación).
+* H0: No hay diferencia en la proporción de estudiantes Hombres y Mujeres con respecto a su raza Étnica.
 
 &nbsp;
 &nbsp;
-* H1: Si hay diferencia (independientes).
+* H1: Si hay diferencia.
 </p>
 </font>
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
@@ -441,11 +438,11 @@ Ahora estudiaremos la independencia entre el Género y el Nivel de Educación.
 
 &nbsp;
 &nbsp;
-* H0: No hay diferencia en la proporción de estudiantes Hombres y Mujeres con respecto a su Nivel de Educación (asociación).
+* H0: No hay diferencia en la proporción de estudiantes Hombres y Mujeres con respecto a su Nivel de Educación.
 
 &nbsp;
 &nbsp;
-* H1: Si hay diferencia (independencia)
+* H1: Si hay diferencia.
 </p>
 </font>
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
