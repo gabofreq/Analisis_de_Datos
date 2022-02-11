@@ -163,9 +163,6 @@ Nivel de educación
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
 education_math
 ```
-\pagebreak
-
-
 <font size="3">
 <p style="text-align: justify;">
 Lunch
@@ -184,7 +181,7 @@ test_math
 ```
 <font size="3">
 <p style="text-align: justify;">
-Para el Género la nota promedio más alta (**68**) es para los hombres, aunque su moda sea de **62**. Mientras que, si analizamos por raza, el promedio más alto es de **73.8** para el grupo E, con una moda de **79**, incluso los datos ordenados hasta el 75 % para el mismo grupo se mantiene más alto (**85**) que los demás. El nivel de educación con la nota más alta es para los universitarios con pregrado, con **69.7** siendo su moda de **80**. Algo interesante es que la nota promedio para los que tienen un lunch estándar es de **70** con respecto a los free/reduce de **58** siendo significaativo el tipo de lunch en la nota. Por último la cantidad de alumnos que completaron el examen fue de **358** de los **1000** que lo dieron.
+Para el Género la nota promedio más alta (**68**) es para los hombres, aunque su moda sea de **62**. Mientras que, si analizamos por raza, el promedio más alto es de **73.8** para el grupo E, con una moda de **79**, incluso los datos ordenados hasta el 75 % para el mismo grupo se mantiene más alto (**85**) que los demás. El nivel de educación con la nota más alta es para los universitarios con pregrado, con **69.7** siendo su moda de **80**. Algo interesante es que la nota promedio para los que tienen un lunch estándar es de **70** con respecto a los free/reduce de **58** siendo significativo el tipo de lunch en la nota. Por último la cantidad de alumnos que completaron el examen fue de **358** de los **1000** que lo dieron.
 </p>
 </font>
 \pagebreak
@@ -219,8 +216,6 @@ Nivel de educación
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
 education_reading
 ```
-\pagebreak
-
 <font size="3">
 <p style="text-align: justify;">
 Lunch
@@ -243,7 +238,6 @@ test_reading
 </p>
 </font>
 \pagebreak
-
 
 <font size="3">
 <p style="text-align: justify;">
@@ -273,10 +267,6 @@ Nivel de educación
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=8}
 education_writing
 ```
-\pagebreak
-
-&nbsp;
-&nbsp;
 <font size="3">
 <p style="text-align: justify;">
 Lunch
@@ -295,7 +285,7 @@ test_reading
 ```
 <font size="3">
 <p style="text-align: justify;">
-**En conclusión**, tenemos que las mujeres obtuvieron una mayor nota promedio de **72** con respecto a los hombres de **63**. La raza étnica del grupo E mantienen la punta con **71** puntos en promedio y un tercer cuartil de **80.2**. Por otro lado, el nivel de educación de los estudiantes que tienen una maestría, obtuvieron la mayor nota de **75.6** con una moda de **86**, mientras que el lunch mantiene la punta para los que toman un estándar, con un cuartil 1 (datos ordenandos hasta el 25 % de los datos) mayor de 62 con respecto a los **53** de los que toman un lunch free/reduced. Y por último los 358 estudiantes que completaron el examen obtuvieron una mayor nota de **73**, con respecto a los que no **66**.
+**En conclusión**, tenemos que las mujeres obtuvieron una mayor nota promedio de **72** con respecto a los hombres de **63**. La raza étnica del grupo E mantienen la punta con **71** puntos en promedio y un tercer cuartil de **80.2**. Por otro lado, el nivel de educación de los estudiantes que tienen una maestría, obtuvieron la mayor nota de **75.6** con una moda de **86**, mientras que el lunch mantiene la punta para los que toman un estándar, con un cuartil 1 (datos ordenandos hasta el 25 % de los datos) mayor de **62** con respecto a los **53** de los que toman un lunch free/reduced. Y por último los 358 estudiantes que completaron el examen obtuvieron una mayor nota de **73**, con respecto a los que no **66**.
 </p>
 </font>
 \pagebreak
@@ -346,42 +336,6 @@ ggplot(DATA, aes(x = lunch, y = math)) +
 &nbsp;
 <font size="3">
 <p style="text-align: justify;">
-Ahora veamos gráficamente las dependencias del género entre las notas de lectura ~ matemáticas. Del siguiente gráfico podemos observar que la relación es lineal positivo entre las dos variables, y que las mujeres tienen mejores notas de lectura y que los hombres mejores notas de matemáticas en todos los grupos étnicos.
-</p>
-</font>
-```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
-ggplot(DATA , aes(x= math, y= reading, colour = gender))+
-  geom_point() +
-  geom_smooth(method = "loess",formula = y ~ x, span = 0.8) + 
-  facet_wrap(~race) + 
-  theme_bw() + 
-  labs(title="Diagrama de dispersión", subtitle = "Lectura ~ Matemáticas para el Género y la raza Étnica") +
-  scale_colour_manual(values=brewer.pal(n = 2,name = "Set2"))
-```
-\pagebreak
-
-&nbsp;
-&nbsp;
-<font size="3">
-<p style="text-align: justify;">
-Si analizamos la relación entre las notas de escritura y lectura, para las variables categóricas nivel de educación y Lunch, podemos observar que la relación es positiva y en magnitud son muy similares dado que la nube de puntos del Lunch estándar y free/reduced son las mismas.
-</p>
-</font>
-```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
-ggplot(DATA , aes(x= writing, y= reading, colour = lunch))+ 
-  geom_point() +
-  geom_smooth(method = "loess",formula = y ~ x, span = 0.8) + 
-  facet_wrap(~education) + 
-  theme_bw() +
-  labs(title="Diagrama de dispersión", subtitle = "Reading ~ escritura para el Nivel de Educación y el Lunch") +
-  scale_colour_manual(values=brewer.pal(n = 2,name = "Set2"))
-```
-\pagebreak
-
-&nbsp;
-&nbsp;
-<font size="3">
-<p style="text-align: justify;">
 Si analizamos el diagrama de densidad de la variable matemáticas, en función del Género, podemos ver que la densidad de los datos es ligeramente mayor para las mujeres, y que el histograma de los hombres esta ligeramente más hacia la derecha, indicando notas más altas. También podemos observar que los datos tienden a una distribución normal para ambos géneros, esto lo podremos concluir más adelante.
 </p>
 </font>
@@ -399,7 +353,7 @@ ggplot(DATA, aes(x=math, color=gender, fill=gender)) +
 &nbsp;
 <font size="3">
 <p style="text-align: justify;">
-Analizando el diagrama de Densidad de las notas de Lectura en función al Género ,por la raza Étnica, podemos observar que las densidad son diferentes para los distintos grupos étnicos, teniendo una ligera mayor densidad el grupo E y más hacia la derecha, indicando que las notas son mayores para este grupo. Las curvas no tienen el comportamiento de una distribución normal, solo observando los gráficos.
+Analizando el diagrama de Densidad de las notas de Lectura en función al Género, por la raza Étnica, podemos observar que la densidad es diferente para los distintos grupos étnicos, teniendo una ligera mayor densidad el grupo E y más hacia la derecha, indicando que las notas son mayores para este grupo. Las curvas no tienen el comportamiento de una distribución normal, solo observando los gráficos.
 </p>
 </font>
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=5}
@@ -436,15 +390,15 @@ ggplot(DATA, aes(x=writing, color=gender, fill=gender)) +
 &nbsp;
 <font size="3">
 <p style="text-align: justify;">
-Realizamos la prueba chi-cuadrado, que utiliza una aproximación a la distribución chi cuadrado de Pearson, para evaluar la discrepancia igual o mayor que la que exista entre los datos y las frecuencias esperadas. Para determinar si las variables son independientes con el nivel de significancia alpha, se rechaza la hipótesis nula, en base al valor p, si es menor o igual al nivel de significancia.
+Para determinar la asociación o independencia de dos variables cualitativas con un cierto grado de significancia, se dispone de una herramienta estadística frecuentemente utilizada, el test de chi–cuadrado, la prueba chi-cuadrado, que utiliza una aproximación a la distribución chi cuadrado de Pearson, para evaluar la discrepancia igual o mayor que la que exista entre los datos y las frecuencias esperadas. Para determinar si las variables son independientes con el nivel de significancia alpha, se rechaza la hipótesis nula, en base al valor p, si es menor o igual al nivel de significancia.
 
 &nbsp;
 &nbsp;
-* H0: No hay diferencia en la proporción de estudiantes Hombres y Mujeres con respecto a su raza Étnica.
+* H0: No hay diferencia en la proporción de estudiantes Hombres y Mujeres con respecto a su raza Étnica (asociación).
 
 &nbsp;
 &nbsp;
-* H1: Si hay diferencia.
+* H1: Si hay diferencia (independientes).
 </p>
 </font>
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
@@ -452,12 +406,10 @@ chisq.test(table(DATA$gender,DATA$race))
 ```
 <font size="3">
 <p style="text-align: justify;">
-No Podemos concluir que las variables de Género y Raza Étnica son independientes, con un valor p mayor a 0.05, no tenemos suficinte evidencia estad+isticapara aceptar o rechazar la hipótesis nula. 
+No Podemos concluir que las variables de Género y Raza Étnica son independientes, con un valor p mayor a 0.05, no tenemos suficinte evidencia estadística para aceptar o rechazar la hipótesis nula. 
 </p>
 </font>
 \pagebreak
-
-
 
 <font size="3">
 <p style="text-align: justify;">
@@ -465,11 +417,11 @@ Ahora estudiaremos la independencia entre el Género y el Nivel de Educación.
 
 &nbsp;
 &nbsp;
-* H0: No hay diferencia en la proporción de estudiantes Hombres y Mujeres con respecto a su Nivel de Educación.
+* H0: No hay diferencia en la proporción de estudiantes Hombres y Mujeres con respecto a su Nivel de Educación (asociación).
 
 &nbsp;
 &nbsp;
-* H1: Si hay diferencia
+* H1: Si hay diferencia (independencia)
 </p>
 </font>
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
@@ -481,14 +433,19 @@ Aceptamos la hipótesis Nula, de que no hay diferencias entre las proporciones d
 </p>
 </font>
 \pagebreak
-<br>
+
+
 <font size="3">
 <p style="text-align: justify;">
-Estudiaremos una prueba para contrastar la normalidad en las variables de interés. La prueba de Hipótesis de Shapiro Wilk, plantea que si una muestra x1, ..., xn proviene de una población normalmente distribuida.
-<br>
-H0: La distribución es normal
-<br>
-H1: La distribución no es normal,
+Estudiaremos una prueba para contrastar la normalidad en las variables de interés. La prueba de Hipótesis de Shapiro Wilk, plantea que si una muestra x1, ... , xn proviene de una población normalmente distribuida.
+
+&nbsp;
+&nbsp;
+* H0: La distribución es normal.
+
+&nbsp;
+&nbsp;
+* H1: La distribución no es normal.
 </p>
 </font>
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
@@ -527,11 +484,69 @@ Podemos concluir que la proporción es la misma dado que el valor p es mayor que
 </p>
 </font>
 
+
+\pagebreak
+# ¿Qué factores afectan más el rendimiento del estudiante? ¿Cómo? 
+<font size="3">
+<p style="text-align: justify;">
+Para contestar esta pregunta, vamos a filtrar las notas obtenidas por los estudiantes en matemáticas, lectura y escritura, para aquellos que han completado el examen y han tenido notas menores a 50. Este resultado se lo puede cruzaar por el tipo de lunch que han tomado.  
+</p>
+</font>
+
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=2.3}
+MUESTRA <- DATA %>% filter(test == 'completed', math <= 60, reading <= 60, writing <= 60)
+ggplot(MUESTRA, aes(x = lunch, y = math)) +
+  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Matemáticas", x = "",y = "Matemáticas") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+```
+
+<font size="3">
+<p style="text-align: justify;">
+Analizando los gráficos de las 3 notas, en función del tipo de lunch, podemos observar que para las matemáticas los estudiantes obtuvieron menores notas para los que reciben un tipo de lunch Free/Reduced, aunque la dispersión es mayor, la mediana si sitúa 5 puntos abajo que para los que reciben un Lunch estándar.
+Para contestar esta pregunta, vamos a filtrar las notas obtenidas por los estudiantes en matemáticas, lectura y escritura, para aquellos que han completado el examen y han tenido notas menores a 50. Este resultado se lo puede cruzaar por el tipo de lunch que han tomado.  
+</p>
+</font>
+
+
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=2.3}
+ggplot(MUESTRA, aes(x = lunch, y = reading)) +
+  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Lectura", x = "",y = "Lectura") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+```
+
+<font size="3">
+<p style="text-align: justify;">
+Para las notas de Lectura las cajas tienen aproximadamente la misma mediana, aunque la dispersión es mayor para el tipo de lunch free/reduced que para un lunch estándar. 
+</p>
+</font>
+
+
+\pagebreak
+
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=2.3}
+ggplot(MUESTRA, aes(x = lunch, y = writing)) +
+  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Escritura", x = "",y = "Escritura") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+```
+
+<font size="3">
+<p style="text-align: justify;">
+Y por último para las notas de Escritura, los estudiantes que recibieron un tipo de lunch estándar, tienen una mediana menor que para los tuvieron un tipo de lunch/reduced, es decir que podríamos afirmar que la matemática y la escritura, es ligeramente dependiente del tipo de lunch que reciben los alumnos, porque se obtienen menores notas en matemáticas cunado toman un free/reduced, y menores notas en escritura si tomas uno estándar. 
+</p>
+</font>
+
+
 \pagebreak
 
 <font size="3">
 <p style="text-align: justify;">
-La diferencia de medias muestrales es significativa para las notas de matemáticas entre los hombres y las mujeres es de:
+Analicemos si la diferencia de las medias muestrales entre los hombres y las mujeres de las notas de matemáticas es significativa. La diferencia de sus medias es: 
 </p>
 </font>
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=5, fig.height=4}
@@ -542,25 +557,150 @@ mean(hombres) - mean(mujeres)
 
 &nbsp;
 &nbsp;
+* Ho: La media de la nota de matemáticas de los hombres es igual que a la media de las mujeres.
+
+&nbsp;
+&nbsp;
+* Ha: La media es diferente.
+
 <font size="3">
 <p style="text-align: justify;">
-El valor p de la prueba es 8.41x10E^-18, que es menor que el nivel de significación alfa = 0.05. Podemos concluir que el la calificación promedio en matemáticas de los hombres es significativamente diferente de la calificación promedio de las mujeres.
+El valor p de la prueba es **8.41x10E^-18**, que es menor que el nivel de significación alfa = 0.05. Podemos concluir que el la calificación promedio en matemáticas de los hombres es significativamente diferente de la calificación promedio de las mujeres.
 </p>
 </font>
 
+
 ```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=5, fig.height=4}
-res <- t.test(hombres, mujeres)
+res = t.test(math ~ gender, data = DATA ,mu = 0, alt = "two.sided", conf = 0.95, var.equal = F , paired = F)
 res
 
 ggplot(DATA, aes(x = gender, y = math)) +
   geom_boxplot(outlier.shape = NA, aes(fill=gender))+
   geom_point(position = "jitter") + theme_bw() +
-  labs(title="Diagrama de Cajas", subtitle = paste("Género ~ Matemáticas, Prueba valor p = ",round(res$p.value),5), x = "",y = "Matemáticas") +
+  labs(title="Diagrama de Cajas", subtitle = "Matemáticas ~ Género, Prueba valor p = 8.41x10E^-18", x = "",y = "Matemáticas") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+```
+
+
+\pagebreak
+
+<font size="3">
+<p style="text-align: justify;">
+Ahora, analicemos la diferencia de las notas de escritura entre los hombres y las mujeres. La diferencia muestral es:
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=5, fig.height=4}
+hombres <- DATA %>% filter(gender == "male") %>% pull(writing)
+mujeres <- DATA %>% filter(gender == "female") %>% pull(writing)
+mean(hombres) - mean(mujeres) # Diferencia de medias muestrales
+```
+&nbsp;
+&nbsp;
+* Ho: La media de la nota de escritura de los hombres es igual que a la media de las mujeres.
+
+&nbsp;
+&nbsp;
+* Ha: La media es diferente.
+
+&nbsp;
+&nbsp;
+<font size="3">
+<p style="text-align: justify;">
+El valor p de la prueba es **2.2x10^-16**, que es menor que el nivel de significación alfa = 0.05. Podemos concluir que el la calificación promedio en escritura de los hombres es significativamente diferente de la calificación promedio de las mujeres.
+</p>
+</font>
+
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=5, fig.height=4}
+res = t.test(writing ~ gender, data = DATA ,mu = 0, alt = "two.sided", conf = 0.95, var.equal = F , paired = F)
+res
+
+ggplot(DATA, aes(x = gender, y = writing)) +
+  geom_boxplot(outlier.shape = NA, aes(fill=gender))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Escritura ~ Género , Prueba valor p = 2.2x10^-16", x = "",y = "Escritura") +
   scale_fill_brewer(palette = "Set2",guide=FALSE)
 ```
 
 \pagebreak
 
+<font size="3">
+<p style="text-align: justify;">
+Ahora, analicemos la diferencia de las notas de lectura entre los hombres y las mujeres. La diferencia muestral es:
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=5, fig.height=4}
+hombres <- DATA %>% filter(gender == "male") %>% pull(reading)
+mujeres <- DATA %>% filter(gender == "female") %>% pull(reading)
+mean(hombres) - mean(mujeres) # Diferencia de medias muestrales
+```
+
+&nbsp;
+&nbsp;
+* Ho: La media de la nota de lectura de los hombres es igual que a la media de las mujeres.
+
+&nbsp;
+&nbsp;
+* Ha: La media es diferente.
+
+&nbsp;
+&nbsp;
+<font size="3">
+<p style="text-align: justify;">
+El valor p de la prueba es **4.37x10^-15**, que es menor que el nivel de significación alfa = 0.05. Podemos concluir que el la calificación promedio en lectura de los hombres es significativamente diferente de la calificación promedio de las mujeres.
+
+</p>
+</font>
+
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=5, fig.height=4}
+res = t.test(reading ~ gender, data = DATA ,mu = 0, alt = "two.sided", conf = 0.95, var.equal = F , paired = F)
+res
+
+ggplot(DATA, aes(x = gender, y = reading)) +
+  geom_boxplot(outlier.shape = NA, aes(fill=gender)) +
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Lectura ~ Género , Prueba valor p = 4.37x10^-15", x = "",y = "Lectura") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+```
+
+
+\pagebreak
+
+&nbsp;
+&nbsp;
+<font size="3">
+<p style="text-align: justify;">
+Ahora veamos gráficamente las dependencias del género entre las notas de lectura ~ matemáticas. Del siguiente gráfico podemos observar que la relación es lineal positivo entre las dos variables, y que las mujeres tienen mejores notas de lectura y que los hombres mejores notas de matemáticas en todos los grupos étnicos.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+ggplot(DATA , aes(x= math, y= reading, colour = gender))+
+  geom_point() +
+  geom_smooth(method = "loess",formula = y ~ x, span = 0.8) + 
+  facet_wrap(~race) + 
+  theme_bw() + 
+  labs(title="Diagrama de dispersión", subtitle = "Lectura ~ Matemáticas para el Género y la raza Étnica") +
+  scale_colour_manual(values=brewer.pal(n = 2,name = "Set2"))
+```
+\pagebreak
+
+&nbsp;
+&nbsp;
+<font size="3">
+<p style="text-align: justify;">
+Si analizamos la relación entre las notas de escritura y lectura, para las variables categóricas nivel de educación y Lunch, podemos observar que la relación es positiva y en magnitud son muy similares dado que la nube de puntos del Lunch estándar y free/reduced son las mismas.
+</p>
+</font>
+```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=6}
+ggplot(DATA , aes(x= writing, y= reading, colour = lunch))+ 
+  geom_point() +
+  geom_smooth(method = "loess",formula = y ~ x, span = 0.8) + 
+  facet_wrap(~education) + 
+  theme_bw() +
+  labs(title="Diagrama de dispersión", subtitle = "Reading ~ escritura para el Nivel de Educación y el Lunch") +
+  scale_colour_manual(values=brewer.pal(n = 2,name = "Set2"))
+```
+
+\pagebreak
 
 <font size="3">
 <p style="text-align: justify;">
@@ -598,59 +738,64 @@ Podemos concluir que, por cada punto obtenido en lectura, obtendremos **0.6** pu
 
 
 \pagebreak
-# ¿Qué factores afectan más el rendimiento del estudiante? ¿Cómo? 
-
-
-<font size="3">
-<p style="text-align: justify;">
-Para contestar esta pregunta, vamos a filtrar las notas obtenidas por los estudiantes en matemáticas, lectura y escritura, para aquellos que han completado el examen y han tenido notas menores a 50. Este resultado se lo puede cruzaar por el tipo de lunch que han tomado.  
-</p>
-</font>
-
-```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=2.3}
-MUESTRA <- DATA %>% filter(test == 'completed', math <= 60, reading <= 60, writing <= 60)
-ggplot(MUESTRA, aes(x = lunch, y = math)) +
-  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
-  geom_point(position = "jitter") + theme_bw() +
-  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Matemáticas", x = "",y = "Matemáticas") +
-  scale_fill_brewer(palette = "Set2",guide=FALSE)
-```
+# Conclusiones
 
 <font size="3">
 <p style="text-align: justify;">
-Analizando los gráficos de las 3 notas, en función del tipo de lunch, podemos observar que para las matemáticas los estudiantes obtuvieron menores notas para los que reciben un tipo de lunch Free/Reduced, aunque la dispersión es mayor, la mediana si sitúa 5 puntos abajo que para los que reciben un Lunch estándar.
-Para contestar esta pregunta, vamos a filtrar las notas obtenidas por los estudiantes en matemáticas, lectura y escritura, para aquellos que han completado el examen y han tenido notas menores a 50. Este resultado se lo puede cruzaar por el tipo de lunch que han tomado.  
-</p>
-</font>
 
+&nbsp;
+&nbsp;
+* Analizando datos descriptivos, obtuvimos que, para las notas de matemáticas, el promedio más alto (**68**) fue para los hombres. Mientras que, si agrupamos por Raza étnica, el promedio más alto (**73.8**) para el grupo E, si analizamos el nivel de educación con la nota más alta es para los universitarios con pregrado (**69.7**). Y para los estudiantes que toman un lunch estándar su nota es más alta (**70**) con respecto a los free/reduce de (**58**). 
 
-```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=2.3}
-ggplot(MUESTRA, aes(x = lunch, y = math)) +
-  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
-  geom_point(position = "jitter") + theme_bw() +
-  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Matemáticas", x = "",y = "Matemáticas") +
-  scale_fill_brewer(palette = "Set2",guide=FALSE)
-```
+&nbsp;
+&nbsp;
+* Para las notas de Lectura, las mujeres obtuvieron una mayor nota (**72**). La raza étnica del grupo E obtuvo la mayor nota (**73**). El nivel de educación en cambio indica que los que tienen maestría obtuvieron una mayor nota (**75**). Del mismo modo los estudiantes que tienen un lunch estándar obtuvieron una nota más alta (**71**). 
 
-<font size="3">
-<p style="text-align: justify;">
-Para las notas de Lectura las cajas tienen aproximadamente la misma mediana, aunque la dispersión es mayor para el tipo de lunch free/reduced que para un lunch estándar. 
+&nbsp;
+&nbsp;
+* Y para las notas de escritura, las mujeres obtuvieron una mayor (**72**). El grupo E mantienen la nota más alta (**71**). El nivel de educación de los estudiantes que tienen una maestría obtuvieron la nota la mayor (**75.6**) mientras que el lunch mantiene la punta para los que toman un estándar (**65**).
+
+&nbsp;
+&nbsp;
+* Si relacionamos las descriptivas con un análisis de diferencia de medias (**t-test**), entre las medias muestral para las variables de interés en función al género. En los tres casos rechazamos el supuesto de que las medias son iguales, para matemáticas los hombres obtuvieron mejores notas **68** a **63**, para lectura las mujeres obtuvieron mejores notas **72** a **65**, y para escritura las mujeres también con mejores notas **72** a **63**.
+
+&nbsp;
+&nbsp;
+* Analizando los digramas de densidad entre el grupo de hombres y mujeres, para la variable matemática podríamos suponer que las densidades son similares y sus datos tienden a un comportamiento de distribución normal, lo mismo sucede si agrupamos los grupos étnicos para la lectura en función del género, y el Nivel de educación para la escritura en función del género. 
+
+&nbsp;
+&nbsp;
+* Un análisis de independencia entre las variables de genero y raza en función a sus frecuencias, nos devuelve un valor p entre 0.05 y 0.1, sin tener evidencia estadística suficiente para aceptar la asociación entre ellas. El mismo análisis para el género y la educación, con un valor p mayor a 0.1, pudiendo así aceptar el supuesto de que son dependientes.
+
+&nbsp;
+&nbsp;
+* Un análisis de normalidad para las 3 variables de estudio, nos indican que ninguna de ellas pertenece a una distribución normal, obteniendo un valor menor que el nivel de significancia de 0.5. 
+
+&nbsp;
+&nbsp;
+* Analizamos diagramas de cajas para estudiar si el factor del tipo lunch tiene un efecto en rendimiento de los estudiantes. Se filtró las notas menores a 60 en las 3 variables, y se tomó solo a los estudiantes que completaron el examen. Gráficamente no se observa una diferencia significativa en sus medianas, aunque para el tipo de lunch free/reduced se observa una mayor frecuencia. 
+
+&nbsp;
+&nbsp;
+* Por último, analizamos gráficos de dispersión entre la lectura y las matemáticas, agrupadas por Genero en función al Grupo Étnico. Luego las notas de lectura y escritura agrupadas por el nivel de educación en función al tipo de Lunch, obtenemos en ambos casos tendencias positivas y fuertes. La matriz de correlación entre las variables de interés nos da correlaciones mayores **0.8**. Si deseáramos modelar las matemáticas en función de las notas de escritura y lectura un test de coeficientes nos indica que ambas son significativas con un nivel de significancia de **0.99**.
+
 </p>
 </font>
 
 
 \pagebreak
+# Referencias
 
-```{r include=T, results=T, echo=F, warning=FALSE, message=FALSE,fig.align='center',fig.width=7, fig.height=2.3}
-ggplot(MUESTRA, aes(x = lunch, y = writing)) +
-  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
-  geom_point(position = "jitter") + theme_bw() +
-  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Escritura", x = "",y = "Escritura") +
-  scale_fill_brewer(palette = "Set2",guide=FALSE)
-```
+[1] t-test. https://rpubs.com/sujith/IS.
 
-<font size="3">
-<p style="text-align: justify;">
-Y por último para las notas de Escritura, los estudiantes que recibieron un tipo de lunch estándar, tienen una mediana menor que para los tuvieron un tipo de lunch/reduced, es decir que podríamos afirmar que la matemática y la escritura, es ligeramente dependiente del tipo de lunch que reciben los alumnos, porque se obtienen menores notas en matemáticas cunado toman un free/reduced, y menores notas en escritura si tomas uno estándar. 
-</p>
-</font>
+[2] Estadística inferencial. https://www.datavedas.com/inferential-statistics-in-r/.
+
+[3] Ggplot2. https://r4stats.com/examples/graphics-ggplot2/.
+
+[4] Corplot. http://www.sthda.com/english/wiki/visualize-correlation-matrix-using-correlogram.
+
+[5] Pdf con Rmarkdown. https://www.youtube.com/watch?v=vyqCebNkreI.
+
+[6] Rmarkdown. http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/.
+
+[7] Rmarkdown. https://r4ds.had.co.nz/r-markdown.html

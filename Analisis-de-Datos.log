@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.8)  9 FEB 2022 00:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.8)  10 FEB 2022 23:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -447,7 +447,7 @@ LaTeX Info: Redefining \% on input line 1.
 [1
 
 {c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<logo_espol.jpg, id=35, 752.0597pt x 306.39468pt>
+<logo_espol.jpg, id=45, 752.0597pt x 306.39468pt>
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
 Package pdftex.def Info: logo_espol.jpg  used on input line 137.
@@ -464,9 +464,15 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 14
 (c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 195.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 195.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 195.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 177.
+Package pdftex.def Info: logo_espol.jpg  used on input line 206.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -476,15 +482,9 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
 [3]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 197.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 197.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 197.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 208.
+Package pdftex.def Info: logo_espol.jpg  used on input line 273.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -496,7 +496,7 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 [4]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 246.
+Package pdftex.def Info: logo_espol.jpg  used on input line 337.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -506,50 +506,14 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
 [5]
-File: logo_espol.jpg Graphic file (type jpg)
-<use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 277.
-(pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.37418pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.37418pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
-
-[6]
-File: logo_espol.jpg Graphic file (type jpg)
-<use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 313.
-(pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.37418pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.37418pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
-
-[7]
-File: logo_espol.jpg Graphic file (type jpg)
-<use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 345.
-(pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.37418pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.37418pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
-
-[8]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf, id=68, 578.16pt x 201.75375pt>
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf, id=65, 578.16pt x 201.75375pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf  used on input line 355.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf  used on input line 347.
 (pdftex.def)             Requested size: 469.75385pt x 163.92451pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 357.
+Package pdftex.def Info: logo_espol.jpg  used on input line 349.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -558,20 +522,20 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[9 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf>]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf, id=78, 578.16pt x 201.75375pt>
+[6 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-17-1.pdf>]
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf, id=75, 578.16pt x 201.75375pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf  used on input line 368.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf  used on input line 360.
 (pdftex.def)             Requested size: 469.75385pt x 163.92451pt.
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf, id=79, 578.16pt x 201.75375pt>
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf, id=76, 578.16pt x 201.75375pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf  used on input line 370.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf  used on input line 362.
 (pdftex.def)             Requested size: 469.75385pt x 163.92451pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 373.
+Package pdftex.def Info: logo_espol.jpg  used on input line 365.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -580,15 +544,15 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[10 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf> <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf>]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf, id=94, 505.89pt x 433.62pt>
+[7 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-1.pdf> <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-18-2.pdf>]
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf, id=92, 505.89pt x 433.62pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf  used on input line 382.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf  used on input line 375.
 (pdftex.def)             Requested size: 469.76265pt x 402.65372pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 384.
+Package pdftex.def Info: logo_espol.jpg  used on input line 377.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -597,15 +561,15 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[11 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf>]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf, id=107, 505.89pt x 433.62pt>
+[8 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-19-1.pdf>]
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf, id=106, 505.89pt x 361.35pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf  used on input line 392.
-(pdftex.def)             Requested size: 469.76265pt x 402.65372pt.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf  used on input line 387.
+(pdftex.def)             Requested size: 469.76265pt x 335.54477pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 394.
+Package pdftex.def Info: logo_espol.jpg  used on input line 389.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -614,32 +578,15 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[12 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf>]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf, id=120, 505.89pt x 433.62pt>
+[9 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-20-1.pdf>]
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf, id=120, 505.89pt x 361.35pt>
 File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf Graphic file (type pdf)
 <use Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf  used on input line 404.
-(pdftex.def)             Requested size: 469.76265pt x 402.65372pt.
-File: logo_espol.jpg Graphic file (type jpg)
-<use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 406.
-(pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.37418pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.37418pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
-
-[13 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf>]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-22-1.pdf, id=135, 505.89pt x 361.35pt>
-File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (type pdf)
-<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-22-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-22-1.pdf  used on input line 416.
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf  used on input line 400.
 (pdftex.def)             Requested size: 469.76265pt x 335.54477pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 418.
+Package pdftex.def Info: logo_espol.jpg  used on input line 402.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -648,15 +595,10 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[14 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-22-1.pdf>]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-23-1.pdf, id=150, 505.89pt x 361.35pt>
-File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-23-1.pdf Graphic file (type pdf)
-<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-23-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-23-1.pdf  used on input line 429.
-(pdftex.def)             Requested size: 469.76265pt x 335.54477pt.
+[10 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-21-1.pdf>]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 431.
+Package pdftex.def Info: logo_espol.jpg  used on input line 436.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -665,10 +607,10 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[15 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-23-1.pdf>]
+[11]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 462.
+Package pdftex.def Info: logo_espol.jpg  used on input line 458.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -677,10 +619,10 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[16]
+[12]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 484.
+Package pdftex.def Info: logo_espol.jpg  used on input line 499.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -689,10 +631,10 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[17]
+[13]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 522.
+Package pdftex.def Info: logo_espol.jpg  used on input line 530.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -701,10 +643,20 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[18]
+[14]
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-26-1.pdf, id=153, 505.89pt x 165.61874pt>
+File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file (type pdf)
+<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-26-1.pdf>
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-26-1.pdf  used on input line 540.
+(pdftex.def)             Requested size: 469.76265pt x 153.79134pt.
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-27-1.pdf, id=154, 505.89pt x 165.61874pt>
+File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-27-1.pdf Graphic file (type pdf)
+<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-27-1.pdf>
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-27-1.pdf  used on input line 552.
+(pdftex.def)             Requested size: 469.76265pt x 153.79134pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 553.
+Package pdftex.def Info: logo_espol.jpg  used on input line 559.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -713,15 +665,36 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[19]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-29-1.pdf, id=182, 361.35pt x 289.08pt>
-File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-29-1.pdf Graphic file (type pdf)
-<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-29-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-29-1.pdf  used on input line 582.
+[15 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-26-1.pdf> <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-27-1.pdf>]
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-28-1.pdf, id=170, 505.89pt x 165.61874pt>
+File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file (type pdf)
+<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-28-1.pdf>
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-28-1.pdf  used on input line 560.
+(pdftex.def)             Requested size: 469.76265pt x 153.79134pt.
+File: logo_espol.jpg Graphic file (type jpg)
+<use logo_espol.jpg>
+Package pdftex.def Info: logo_espol.jpg  used on input line 571.
+(pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
+
+Package fancyhdr Warning: \headheight is too small (28.0pt): 
+(fancyhdr)                Make it at least 38.37418pt, for example:
+(fancyhdr)                \setlength{\headheight}{38.37418pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
+
+[16 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-28-1.pdf>]
+Overfull \hbox (81.49338pt too wide) in paragraph at lines 602--602
+[]\T1/lmtt/m/n/10 ## alternative hypothesis: true difference in means between group female and group male is not equal to 0[] 
+ []
+
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-30-1.pdf, id=180, 361.35pt x 289.08pt>
+File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file (type pdf)
+<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-30-1.pdf>
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-30-1.pdf  used on input line 604.
 (pdftex.def)             Requested size: 361.34912pt x 289.07928pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 585.
+Package pdftex.def Info: logo_espol.jpg  used on input line 607.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -730,15 +703,91 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[20 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-29-1.pdf>]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-30-1.pdf, id=192, 289.08pt x 289.08pt>
-File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file (type pdf)
-<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-30-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-30-1.pdf  used on input line 590.
+[17 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-30-1.pdf>]
+Overfull \hbox (81.49338pt too wide) in paragraph at lines 639--639
+[]\T1/lmtt/m/n/10 ## alternative hypothesis: true difference in means between group female and group male is not equal to 0[] 
+ []
+
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-32-1.pdf, id=190, 361.35pt x 289.08pt>
+File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file (type pdf)
+<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-32-1.pdf>
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-32-1.pdf  used on input line 641.
+(pdftex.def)             Requested size: 361.34912pt x 289.07928pt.
+File: logo_espol.jpg Graphic file (type jpg)
+<use logo_espol.jpg>
+Package pdftex.def Info: logo_espol.jpg  used on input line 644.
+(pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
+
+Package fancyhdr Warning: \headheight is too small (28.0pt): 
+(fancyhdr)                Make it at least 38.37418pt, for example:
+(fancyhdr)                \setlength{\headheight}{38.37418pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
+
+[18 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-32-1.pdf>]
+Overfull \hbox (81.49338pt too wide) in paragraph at lines 676--676
+[]\T1/lmtt/m/n/10 ## alternative hypothesis: true difference in means between group female and group male is not equal to 0[] 
+ []
+
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-34-1.pdf, id=200, 361.35pt x 289.08pt>
+File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file (type pdf)
+<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-34-1.pdf>
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-34-1.pdf  used on input line 678.
+(pdftex.def)             Requested size: 361.34912pt x 289.07928pt.
+File: logo_espol.jpg Graphic file (type jpg)
+<use logo_espol.jpg>
+Package pdftex.def Info: logo_espol.jpg  used on input line 681.
+(pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
+
+Package fancyhdr Warning: \headheight is too small (28.0pt): 
+(fancyhdr)                Make it at least 38.37418pt, for example:
+(fancyhdr)                \setlength{\headheight}{38.37418pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
+
+[19 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-34-1.pdf>]
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-35-1.pdf, id=211, 505.89pt x 433.62pt>
+File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file (type pdf)
+<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-35-1.pdf>
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-35-1.pdf  used on input line 690.
+(pdftex.def)             Requested size: 469.76265pt x 402.65372pt.
+File: logo_espol.jpg Graphic file (type jpg)
+<use logo_espol.jpg>
+Package pdftex.def Info: logo_espol.jpg  used on input line 692.
+(pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
+
+Package fancyhdr Warning: \headheight is too small (28.0pt): 
+(fancyhdr)                Make it at least 38.37418pt, for example:
+(fancyhdr)                \setlength{\headheight}{38.37418pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
+
+[20 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-35-1.pdf>]
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-36-1.pdf, id=224, 505.89pt x 433.62pt>
+File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-36-1.pdf Graphic file (type pdf)
+<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-36-1.pdf>
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-36-1.pdf  used on input line 700.
+(pdftex.def)             Requested size: 469.76265pt x 402.65372pt.
+File: logo_espol.jpg Graphic file (type jpg)
+<use logo_espol.jpg>
+Package pdftex.def Info: logo_espol.jpg  used on input line 703.
+(pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
+
+Package fancyhdr Warning: \headheight is too small (28.0pt): 
+(fancyhdr)                Make it at least 38.37418pt, for example:
+(fancyhdr)                \setlength{\headheight}{38.37418pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
+
+[21 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-36-1.pdf>]
+<Analisis-de-Datos_files/figure-latex/unnamed-chunk-37-1.pdf, id=237, 289.08pt x 289.08pt>
+File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file (type pdf)
+<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-37-1.pdf>
+Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-37-1.pdf  used on input line 708.
 (pdftex.def)             Requested size: 289.09251pt x 289.09251pt.
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 625.
+Package pdftex.def Info: logo_espol.jpg  used on input line 743.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -747,20 +796,10 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[21 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-30-1.pdf>]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-32-1.pdf, id=203, 505.89pt x 165.61874pt>
-File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file (type pdf)
-<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-32-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-32-1.pdf  used on input line 635.
-(pdftex.def)             Requested size: 469.76265pt x 153.79134pt.
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-33-1.pdf, id=204, 505.89pt x 165.61874pt>
-File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-33-1.pdf Graphic file (type pdf)
-<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-33-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-33-1.pdf  used on input line 647.
-(pdftex.def)             Requested size: 469.76265pt x 153.79134pt.
+[22 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-37-1.pdf>]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 654.
+Package pdftex.def Info: logo_espol.jpg  used on input line 814.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -769,15 +808,10 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[22 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-32-1.pdf> <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-33-1.pdf>]
-<Analisis-de-Datos_files/figure-latex/unnamed-chunk-34-1.pdf, id=220, 505.89pt x 165.61874pt>
-File: Analisis-de-Datos_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file (type pdf)
-<use Analisis-de-Datos_files/figure-latex/unnamed-chunk-34-1.pdf>
-Package pdftex.def Info: Analisis-de-Datos_files/figure-latex/unnamed-chunk-34-1.pdf  used on input line 655.
-(pdftex.def)             Requested size: 469.76265pt x 153.79134pt.
+[23]
 File: logo_espol.jpg Graphic file (type jpg)
 <use logo_espol.jpg>
-Package pdftex.def Info: logo_espol.jpg  used on input line 665.
+Package pdftex.def Info: logo_espol.jpg  used on input line 836.
 (pdftex.def)             Requested size: 85.3547pt x 34.77414pt.
 
 Package fancyhdr Warning: \headheight is too small (28.0pt): 
@@ -786,26 +820,26 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.37418pt}.
 
-[23 <./Analisis-de-Datos_files/figure-latex/unnamed-chunk-34-1.pdf>] (./Analisis-de-Datos.aux
+[24] (./Analisis-de-Datos.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
 Package rerunfilecheck Info: File `Analisis-de-Datos.out' has not changed.
-(rerunfilecheck)             Checksum: 71F3238EAC10CC82D84792D5CE8D6606;807.
+(rerunfilecheck)             Checksum: 38B494A22BCE90BC82C385289741A4C3;1010.
  ) 
 Here is how much of TeX's memory you used:
- 12459 strings out of 480220
- 200438 string characters out of 5893337
- 499691 words of memory out of 5000000
- 30176 multiletter control sequences out of 15000+600000
+ 12486 strings out of 480220
+ 201645 string characters out of 5893337
+ 504763 words of memory out of 5000000
+ 30196 multiletter control sequences out of 15000+600000
  514890 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,15n,63p,451b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/gabri/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Analisis-de-Datos.pdf (23 pages, 769060 bytes).
+Output written on Analisis-de-Datos.pdf (24 pages, 900311 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 33 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 307 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -161,11 +161,44 @@ model=lm(math ~ reading + writing, data = DATA)
 coeftest(model)
 
 
+MUESTRA <- DATA %>% filter(test == 'completed', math <= 60, reading <= 60, writing <= 60)
+ggplot(MUESTRA, aes(x = lunch, y = math)) +
+  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Matemáticas", x = "",y = "Matemáticas") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+
+ggplot(MUESTRA, aes(x = lunch, y = math)) +
+  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Matemáticas", x = "",y = "Matemáticas") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+
+ggplot(MUESTRA, aes(x = lunch, y = writing)) +
+  geom_boxplot(outlier.shape = NA, aes(fill = lunch))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = "Lunch ~ Escritura", x = "",y = "Escritura") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
+
+
 hombres <- DATA %>% filter(gender == "male") %>% pull(math)
 mujeres <- DATA %>% filter(gender == "female") %>% pull(math)
 mean(hombres) - mean(mujeres) # Diferencia de medias muestrales
-res <- t.test(hombres, mujeres)
+res = t.test(math ~ gender, data = DATA ,mu = 0, alt = "two.sided", conf = 0.95, var.equal = F , paired = F)
 res
+
+
+hombres <- DATA %>% filter(gender == "male") %>% pull(writing)
+mujeres <- DATA %>% filter(gender == "female") %>% pull(writing)
+mean(hombres) - mean(mujeres) # Diferencia de medias muestrales
+res = t.test(writing ~ gender, data = DATA ,mu = 0, alt = "two.sided", conf = 0.95, var.equal = F , paired = F)
+res
+
+ggplot(DATA, aes(x = gender, y = writing)) +
+  geom_boxplot(outlier.shape = NA, aes(fill=gender))+
+  geom_point(position = "jitter") + theme_bw() +
+  labs(title="Diagrama de Cajas", subtitle = paste("Escritura ~ Género , Prueba valor p = ",round(res$p.value),5), x = "",y = "Escritura") +
+  scale_fill_brewer(palette = "Set2",guide=FALSE)
 
 
 MUESTRA <- DATA %>% filter(test == 'completed', math <= 60, reading <= 60, writing <= 60)
